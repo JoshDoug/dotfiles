@@ -1,4 +1,4 @@
-for file in $PWD/*
+for file in $(ls -A)
 do
   echo $file
 done
