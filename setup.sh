@@ -14,7 +14,7 @@ for file in $dotfiles; do
   if [ -f ~/$file ]; then
     mv ~/$file $backup_dir
   fi
-  # If a Symlink doesn't exist, symlink the .dotfile
+  # If a Symlink doesn't exist, symlink the file
   if [ ! -L ~/$file ]; then
     ln -s $PWD/$file ../
     echo "Symlinked $file"
