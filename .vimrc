@@ -1,6 +1,9 @@
+" Vim config
 
+" Set leader key
 :imap jj <Esc>
 
+" Set hybrid numbering - relative/absolute line numbers
 set relativenumber
 if v:version > 703
 	set number
