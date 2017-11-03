@@ -22,6 +22,8 @@ set ruler              " show the cursor position all the time
 " Switch syntax highlighting on
 syntax on
 
+set scrolloff=4     " Ensure there are 4 lines between the cursor and the top of bottom of the page
+
 set tabstop=2       " The width of a TAB is set to 2.
                     " Still it is a \t. It is just that
                     " Vim will interpret it to be having
