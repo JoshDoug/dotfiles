@@ -4,17 +4,14 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'altercation/vim-colors-solarized'
-"Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
 " Enable theme
 syntax enable
 let g:solarized_termcolors=256
-"set termguicolors
 set background=dark
 colorscheme solarized
-"colorscheme onedark
 
 " Set leader key
 :imap jj <Esc>
