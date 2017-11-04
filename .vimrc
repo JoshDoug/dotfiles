@@ -3,8 +3,18 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'
+Plug 'altercation/vim-colors-solarized'
+"Plug 'joshdick/onedark.vim'
 
 call plug#end()
+
+" Enable theme
+syntax enable
+let g:solarized_termcolors=256
+"set termguicolors
+set background=dark
+colorscheme solarized
+"colorscheme onedark
 
 " Set leader key
 :imap jj <Esc>
@@ -24,9 +34,6 @@ if has('mouse')
 endif
 
 set ruler              " show the cursor position all the time
-
-" Switch syntax highlighting on
-syntax on
 
 set scrolloff=4     " Ensure there are 4 lines between the cursor and the top of bottom of the page
 
