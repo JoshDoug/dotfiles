@@ -1,5 +1,11 @@
 " Vim config
 
+call plug#begin('~/.local/share/nvim/plugged')
+
+Plug 'vim-airline/vim-airline'
+
+call plug#end()
+
 " Set leader key
 :imap jj <Esc>
 
