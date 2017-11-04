@@ -4,6 +4,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'altercation/vim-colors-solarized'
+Plug 'Shougo/deoplete.nvim'
+Plug 'artur-shaik/vim-javacomplete2'
+Plug 'Shougo/neco-vim'
 
 call plug#end()
 
@@ -12,6 +15,12 @@ syntax enable
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
+" javacomplete2 plugin configuration
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 " Set leader key
 :imap jj <Esc>
