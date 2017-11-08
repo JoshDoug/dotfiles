@@ -30,5 +30,9 @@ fi
 #export JAVA_HOME=`/usr/libexec/java_home -v '1/8*'`
 export JAVA_HOME=`/usr/libexec/java_home -v '9*'`
 
+# Set Editor
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
 eval "$(pyenv init -)"
 #eval "$(rbenv init -)"
