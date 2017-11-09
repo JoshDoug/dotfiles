@@ -8,6 +8,7 @@ Plug 'Shougo/deoplete.nvim'
 Plug 'artur-shaik/vim-javacomplete2'
 Plug 'Shougo/neco-vim'
 Plug 'jvirtanen/vim-octave'
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
