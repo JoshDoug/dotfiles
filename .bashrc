@@ -37,5 +37,8 @@ export PATH="/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/bin:$PATH
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
+# nvim typo alias
+alias nivm=nvim
+
 eval "$(pyenv init -)"
 #eval "$(rbenv init -)"
