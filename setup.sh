@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/usr/bin/env bash
 # Symlink dotfiles into home folder
 
 dir=$PWD
