@@ -7,9 +7,12 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'Shougo/deoplete.nvim'
 Plug 'artur-shaik/vim-javacomplete2'
 Plug 'Shougo/neco-vim'
-Plug 'jvirtanen/vim-octave'
+"Plug 'jvirtanen/vim-octave'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-vinegar'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'rust-lang/rust.vim'
+Plug 'w0rp/ale'
 
 call plug#end()
 
