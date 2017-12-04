@@ -33,6 +33,9 @@ export JAVA_HOME=`/usr/libexec/java_home -v '9*'`
 # Ensure jlink is added to PATH
 export PATH="/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/bin:$PATH"
 
+# Add Rust to path
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # Set Editor
 export VISUAL=nvim
 export EDITOR="$VISUAL"
