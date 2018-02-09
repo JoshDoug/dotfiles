@@ -36,6 +36,12 @@ export PATH="$JAVA_HOME/bin:$PATH"
 # Add Rust to path
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# Add joggle
+if [ -f /usr/local/jds/joggle.sh ]; then
+  export PATH="/usr/local/jds:$PATH"
+  alias joggle=". $(which joggle.sh)"
+fi
+
 # Set Editor
 export VISUAL=nvim
 export EDITOR="$VISUAL"
