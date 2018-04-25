@@ -7,7 +7,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'Shougo/deoplete.nvim'
 Plug 'artur-shaik/vim-javacomplete2'
 Plug 'Shougo/neco-vim'
-"Plug 'jvirtanen/vim-octave'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-vinegar'
 Plug 'editorconfig/editorconfig-vim'
@@ -27,19 +26,6 @@ let g:deoplete#enable_at_startup = 1
 
 " javacomplete2 plugin configuration
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
-
-" Octave syntax
-augroup filetypedetect
-  au! BufRead,BufNewFile *.m,*.oct set filetype=octave
-augroup END
-
-" Use keywords from Octave syntax language file for autocomplete
-if has("autocmd") && exists("+omnifunc")
-   autocmd Filetype octave
-   \	if &omnifunc == "" |
-   \	setlocal omnifunc=syntaxcomplete#Complete |
-   \	endif
-endif
 
 " Set leader key
 :imap jj <Esc>
