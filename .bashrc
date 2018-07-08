@@ -28,7 +28,7 @@ fi
 
 # Set Java version
 #export JAVA_HOME=`/usr/libexec/java_home -v '1/8*'`
-export JAVA_HOME=`/usr/libexec/java_home -v '9*'`
+export JAVA_HOME=`/usr/libexec/java_home -v '10*'`
 
 # Ensure jlink is added to PATH
 export PATH="$JAVA_HOME/bin:$PATH"
