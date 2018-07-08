@@ -37,6 +37,10 @@ if v:version > 703
 	set number
 endif
 
+" more natural split opening
+set splitbelow
+set splitright
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
