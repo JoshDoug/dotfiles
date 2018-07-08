@@ -12,6 +12,7 @@ Plug 'tpope/vim-vinegar'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'rust-lang/rust.vim'
 Plug 'w0rp/ale'
+Plug 'JuliaEditorSupport/julia-vim'
 
 call plug#end()
 
