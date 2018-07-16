@@ -18,8 +18,11 @@ export HISTIGNORE="h:history:pwd:exit:ls:ll"    #ignore these commands
 # Set Grep Options
 export GREP_OPTIONS="--color=auto"
 
-# Add HomeBrew System Binaries to PATH
-export PATH="/usr/local/sbin:$PATH"
+# Managing PATH
+export PATH="$HOME/.npm-packages/bin:$PATH" # Add npm and others to PATH
+export PATH="/usr/local/sbin:$PATH" # Add HomeBrew System Binaries to PATH
+export PATH="$HOME/.cargo/bin:$PATH" # Add Rust to path
+export PATH="$JAVA_HOME/bin:$PATH" # Ensure jlink is added to PATH
 
 # Bash Tab Completion
 if [ -f /usr/local/share/bash-completion/bash_completion ]; then
@@ -29,12 +32,6 @@ fi
 # Set Java version
 #export JAVA_HOME=`/usr/libexec/java_home -v '1/8*'`
 export JAVA_HOME=`/usr/libexec/java_home -v '10*'`
-
-# Ensure jlink is added to PATH
-export PATH="$JAVA_HOME/bin:$PATH"
-
-# Add Rust to path
-export PATH="$HOME/.cargo/bin:$PATH"
 
 # Add joggle
 if [ -f /usr/local/jds/joggle.sh ]; then
