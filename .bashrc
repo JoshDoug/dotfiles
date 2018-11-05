@@ -10,10 +10,11 @@ alias ls="ls -AG"
 alias ll="ls -lAhG"
 alias up="cd .."
 alias home="cd ~"
+alias h=history
 
 # Set History Options
 export HISTCONTROL=ignoreboth   #ignores dupes and commands prefixed with spaces
-export HISTIGNORE="h:history:pwd:exit:ls:ll"    #ignore these commands
+export HISTIGNORE="h:history:pwd:exit:ls:ll:clear"    #ignore these commands
 
 # Set Grep Options
 export GREP_OPTIONS="--color=auto"
