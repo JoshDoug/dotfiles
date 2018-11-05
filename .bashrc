@@ -31,7 +31,7 @@ fi
 
 # Set Java version
 #export JAVA_HOME=`/usr/libexec/java_home -v '1/8*'`
-export JAVA_HOME=`/usr/libexec/java_home -v '10*'`
+export JAVA_HOME=`/usr/libexec/java_home -v '11*'`
 
 # Add joggle
 if [ -f /usr/local/jds/joggle.sh ]; then
