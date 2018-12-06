@@ -35,8 +35,8 @@ fi
 export JAVA_HOME=`/usr/libexec/java_home -v '11*'`
 
 # Add joggle
-if [ -f /usr/local/jds/joggle.sh ]; then
-  export PATH="/usr/local/jds:$PATH"
+if [ -f /usr/local/jds/joggle/joggle.sh ]; then
+  export PATH="/usr/local/jds/joggle:$PATH"
   alias joggle=". $(which joggle.sh)"
 fi
 
